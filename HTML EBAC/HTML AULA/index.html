@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Notícias</title>
+  <title>Meu portal de notícias</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header class="main-header">
-    <h1>Portal de Notícias</h1>
+    <h1>Meu portal de notícias</h1>
     <nav>
       <ul>
-        <li><a href="#economia">Economia</a></li>
+        <li><a href="#esportes">Esportes</a></li>
+        <li><a href="#economia">Economia</a></li>   
         <li><a href="#tecnologia">Tecnologia</a></li>
         <li><a href="#entretenimento">Entretenimento</a></li>
       </ul>
@@ -22,56 +23,118 @@
 
   <main class="container">
 
-    <!-- Seção 1: Economia (Notícia Principal) -->
+    <!-- Seção 1: Esportes (Modelo da Imagem) -->
+    <section id="esportes" class="news-section section-sports">
+      <h2 class="section-title">Esportes</h2>
+      <div class="articles-grid">
+        
+        <article class="card">
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\futebol.jpeg" alt="Grande clássico na noite de hoje" class="card-img">
+          <div class="card-body">
+            <span class="post-date">13/07/2022 às 12:35</span>
+            <h3>Grande clássico na noite de hoje</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\superbowl.jpeg" alt="Noite do Superbowl" class="card-img">
+          <div class="card-body">
+            <span class="post-date">13/07/2022 às 12:35</span>
+            <h3>Noite do Superbowl</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\NBA.jpeg" alt="Notícia sobre a NBA" class="card-img">
+          <div class="card-body">
+            <span class="post-date">13/07/2022 às 12:35</span>
+            <h3>Notícia sobre a NBA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Seção 2: Economia -->
     <section id="economia" class="news-section section-economy">
       <h2 class="section-title">Economia</h2>
       <div class="articles-grid">
         <article class="card">
-          <h3>Mercado Financeiro e Tendências de Investimento</h3>
-          <p>Análise dos principais indicadores econômicos e o impacto na inflação e na taxa de juros nacional.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\economia.jpeg" alt="Notícia sobre Mercado Financeiro" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 14:00</span>
+            <h3>Mercado Financeiro e Tendências de Investimento</h3>
+            <p>Análise dos principais indicadores econômicos e o impacto na inflação e na taxa de juros nacional.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Crescimento do Setor de Exportações</h3>
-          <p>Balança comercial registra recorde no trimestre impulsionada pelo agronegócio e pela indústria.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\exportação.jpeg" alt="Notícia sobre Exportações" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 15:30</span>
+            <h3>Crescimento do Setor de Exportações</h3>
+            <p>Balança comercial registra recorde no trimestre impulsionada pelo agronegócio e pela indústria.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- Seção 2: Tecnologia -->
+    <!-- Seção 3: Tecnologia -->
     <section id="tecnologia" class="news-section section-tech">
       <h2 class="section-title">Tecnologia</h2>
       <div class="articles-grid">
         <article class="card">
-          <h3>Inovações em Inteligência Artificial</h3>
-          <p>Descubra como os novos modelos de IA estão transformando a análise de dados e o desenvolvimento web.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\IA.jpeg" alt="Notícia sobre Inteligência Artificial" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 16:15</span>
+            <h3>Inovações em Inteligência Artificial</h3>
+            <p>Descubra como os novos modelos de IA estão transformando a análise de dados e o desenvolvimento web.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Avanços em Computação em Nuvem</h3>
-          <p>Empresas aceleram a migração para arquiteturas serverless e soluções de segurança distribuídas.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\computação em nuvem.jpeg" alt="Notícia sobre Computação em Nuvem" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 17:00</span>
+            <h3>Avanços em Computação em Nuvem</h3>
+            <p>Empresas aceleram a migração para arquiteturas serverless e soluções de segurança distribuídas.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- Seção 3: Entretenimento -->
+    <!-- Seção 4: Entretenimento -->
     <section id="entretenimento" class="news-section section-entertainment">
       <h2 class="section-title">Entretenimento</h2>
       <div class="articles-grid">
         <article class="card">
-          <h3>Lançamentos do Cinema nesta Semana</h3>
-          <p>Confira a lista dos filmes mais aguardados que chegam às telonas e plataformas de streaming.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\cinema.jpeg" alt="Notícia sobre Cinema" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 18:00</span>
+            <h3>Lançamentos do Cinema nesta Semana</h3>
+            <p>Confira a lista dos filmes mais aguardados que chegam às telonas e plataformas de streaming.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Festivais de Música e Cultura</h3>
-          <p>Os principais eventos e shows confirmados para a temporada de festivais deste ano.</p>
-          <a href="#" class="btn">Leia mais</a>
+          <img src="C:\Users\Familia_Souza\OneDrive\Documentos\Aulas EBAC\HTML EBAC\media\musica.jpeg" alt="Notícia sobre Festivais de Música" class="card-img">
+          <div class="card-body">
+            <span class="post-date">28/10/2026 às 19:20</span>
+            <h3>Festivais de Música e Cultura</h3>
+            <p>Os principais eventos e shows confirmados para a temporada de festivais deste ano.</p>
+            <a href="#" class="btn">Ler mais</a>
+          </div>
         </article>
       </div>
     </section>
@@ -80,7 +143,7 @@
 
   <!-- Rodapé -->
   <footer class="main-footer">
-    <p>&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Meu portal de notícias. Todos os direitos reservados.</p>
   </footer>
 
 </body>

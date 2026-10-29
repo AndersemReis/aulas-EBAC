@@ -1,4 +1,4 @@
-/* Reset Básico e Fontes */
+/* Reset Básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +6,24 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #d8d8d8;
+  color: #000;
+  line-height: 1.5;
 }
 
 /* Cabeçalho */
 .main-header {
-  background-color: #1e1e2f;
+  background-color: #2e353d;
   color: #fff;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
 }
 
 .main-header ul {
@@ -31,7 +35,7 @@ body {
 .main-header a {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .main-header a:hover {
@@ -41,25 +45,22 @@ body {
 /* Container do Conteúdo */
 .container {
   max-width: 1100px;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
 .news-section {
-  border-radius: 8px;
-  padding: 2rem;
   margin-bottom: 2.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
 }
 
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid currentColor;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-bottom: 2px;
 }
 
-/* Cards */
+/* Grids de Artigos */
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -67,89 +68,91 @@ body {
 }
 
 .card {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 6px;
-  border-left: 5px solid transparent;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.3rem;
 }
 
 .card h3 {
-  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card p {
-  color: #555;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #222;
+  margin-bottom: 0.8rem;
 }
 
 .btn {
   display: inline-block;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
   font-weight: bold;
-  align-self: flex-start;
+  font-size: 0.9rem;
   color: #fff;
-  transition: opacity 0.2s ease;
 }
 
-.btn:hover {
-  opacity: 0.85;
+/* --- CORES PERSONALIZADAS POR SEÇÃO --- */
+
+/* SEÇÃO 1: ESPORTES (Azul do Modelo) */
+.section-sports .section-title {
+  background-color: #2b78e4;
+  color: #fff;
+  padding: 2px 8px;
 }
 
-/* --- ESTILOS E CORES DIFERENTES POR SEÇÃO --- */
-
-/* SEÇÃO 1: ECONOMIA (Tom Verde) */
-.section-economy {
-  background-color: #eef9f3;
-  border: 1px solid #a3e2bb;
+.section-sports .btn {
+  background-color: #0000d1;
 }
 
+/* SEÇÃO 2: ECONOMIA (Verde) */
 .section-economy .section-title {
-  color: #1b8a4a;
-}
-
-.section-economy .card {
-  border-left-color: #1b8a4a;
+  background-color: #1b8a4a;
+  color: #fff;
+  padding: 2px 8px;
 }
 
 .section-economy .btn {
   background-color: #1b8a4a;
 }
 
-/* SEÇÃO 2: TECNOLOGIA (Tom Azul) */
-.section-tech {
-  background-color: #eef7fc;
-  border: 1px solid #b3e5fc;
-}
-
+/* SEÇÃO 3: TECNOLOGIA (Ciano/Azul Escuro) */
 .section-tech .section-title {
-  color: #0277bd;
-}
-
-.section-tech .card {
-  border-left-color: #0277bd;
+  background-color: #0277bd;
+  color: #fff;
+  padding: 2px 8px;
 }
 
 .section-tech .btn {
   background-color: #0277bd;
 }
 
-/* SEÇÃO 3: ENTRETENIMENTO (Tom Roxo) */
-.section-entertainment {
-  background-color: #fcf2f9;
-  border: 1px solid #f8bbd0;
-}
-
+/* SEÇÃO 4: ENTRETENIMENTO (Roxo) */
 .section-entertainment .section-title {
-  color: #8e24aa;
-}
-
-.section-entertainment .card {
-  border-left-color: #8e24aa;
+  background-color: #8e24aa;
+  color: #fff;
+  padding: 2px 8px;
 }
 
 .section-entertainment .btn {
@@ -160,7 +163,7 @@ body {
 .main-footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #1e1e2f;
-  color: #aaa;
-  font-size: 0.9rem;
+  background-color: #2e353d;
+  color: #ccc;
+  font-size: 0.85rem;
 }
